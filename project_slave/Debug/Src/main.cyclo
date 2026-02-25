@@ -1,0 +1,5 @@
+../Src/main.c:4:6:SystemClock_Config	4
+../Src/main.c:14:6:Init_NodeB	2
+../Src/main.c:46:6:Set_Servo	1
+../Src/main.c:50:6:UART_Send	3
+../Src/main.c:57:5:main	3

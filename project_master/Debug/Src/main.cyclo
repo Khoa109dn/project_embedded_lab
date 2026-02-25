@@ -1,0 +1,4 @@
+../Src/main.c:4:6:SystemClock_Config	4
+../Src/main.c:14:6:Init_NodeA	3
+../Src/main.c:38:6:CAN_SendTemp	1
+../Src/main.c:45:5:main	3
