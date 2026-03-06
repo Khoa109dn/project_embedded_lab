@@ -1,7 +1,10 @@
 🎯 Mục tiêu:
 Hệ thống sử dụng hai board STM32 giao tiếp qua mạng CAN Bus để giám sát môi trường và điều khiển cơ cấu chấp hành:
+
 -Đọc dữ liệu độ ẩm từ cảm biến AHT20. Nếu độ ẩm vượt ngưỡng an toàn (Độ ẩm cao), board sẽ gửi lệnh dừng qua CAN Bus.
+
 -Nhận lệnh từ máy tính (1,f,space) <-> (tăng 10', reset, lùi 10') để điều khiển Servo. Khi độ ẩm bình thường, Servo quay; khi nhận tín hiệu "Độ ẩm cao", Servo sẽ lập tức dừng quay.
+
 Hiển thị: góc quay của servo hiện tại so với góc ban đầu.
 
 🔌 Sơ đồ đấu chân :
