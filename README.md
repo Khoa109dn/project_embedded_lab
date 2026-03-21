@@ -3,9 +3,9 @@ Hệ thống sử dụng hai board STM32 giao tiếp qua mạng CAN Bus để gi
 
 -Đọc dữ liệu độ ẩm từ cảm biến AHT20. Nếu độ ẩm vượt ngưỡng an toàn (Độ ẩm cao), board sẽ gửi lệnh dừng qua CAN Bus.
 
--Nhận lệnh từ máy tính (1,f,space) <-> (tăng 10', reset, lùi 10') để điều khiển Servo. Khi độ ẩm bình thường, Servo quay; khi nhận tín hiệu "Độ ẩm cao", Servo sẽ lập tức dừng quay.
+-Nhận lệnh từ máy tính (1,f,space) <-> (tăng 10', reset, lùi 10') để điều khiển Servo. Khi độ ẩm bình thường, Servo quay; khi nhận tín hiệu "Độ ẩm cao", Servo sẽ lập tức dừng quay, không nhận lệnh từ cp2102 nữa.
 
-Hiển thị: góc quay của servo hiện tại so với góc ban đầu.
+Hiển thị: góc quay của servo hiện tại so với góc ban đầu, tối đa được 180 độ.
 
 🔌 Sơ đồ đấu chân :
 * Linh kiện: 2 stm32f103c8t6, 2 mcp2551, 1 màn oled ssd1306 giao tiếp spi, 1 nguồn nuôi (adapter), 1 servo, 1 aht20, 1 dc2551 đầu cái kèm domino.
